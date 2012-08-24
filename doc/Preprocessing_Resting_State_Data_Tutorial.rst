@@ -29,6 +29,8 @@ Description
 -----------
 The description tab should show:
 
+mage:: bips_images/Bips_Config.png
+   :scale: 75 %
 .. image:: bips_images/Description.png
    :scale: 75 %
 
@@ -37,6 +39,9 @@ The description tab should show:
 Directories
 -----------
 The Directories tab shows:
+
+.. image:: bips_images/Directories.png
+     :scale: 75% 
 
 * Working dir : This is the working directory where nipype_ stores all the intermediate files and cache information of your workflow. Once your analysis is complete you can delete the working directory because the results are saved in the sink directory. If you change some configuration parameters and re-run the workflow, only the steps that have changed parameters will run.
 * Sink dir : This is the output directory of your data - it will be organized by subject id and will have the outputs listed in the workflow description_.
@@ -176,6 +181,9 @@ CompCor_
 
 .. _Compcor: http://www.sciencedirect.com/science/article/pii/S1053811907003837.
 
+.. image:: bips_images/CompCor.png
+   :scale: 75%
+
 * Compcor select: Although the selection boxes aren't labelled, they represent (in the order specified) running:
 
   #.  T-compcor: Timeseries of voxels with the highest variance
@@ -193,7 +201,8 @@ Choose the components to regress from the time series:
 .. image:: bips_images/Nuisance_filter.png
    :scale: 75 %
 
-* Reg params: The unlabelled selection boxes represent (in the order specified below):
+* Reg params:
+ The unlabelled selection boxes represent (in the order specified below):
 
   #. Regress motion parameters
   #. Regress norm components from artifact detection
@@ -207,6 +216,9 @@ Choose the components to regress from the time series:
 
 Smoothing
 ---------
+
+.. image:: bips_images/Smoothing.png
+   :scale: 75%
 
 Enter smoothing parameters:
 
@@ -225,10 +237,17 @@ Enter smoothing parameters:
 Bandpass Filter
 ---------------
 
+.. image:: bips_images/Bandpass_filter.png
+   :scale: 75%=
+
 Enter filtering parameters:
 
 Advanced Options
 ----------------
+
+.. image:: bips_images/Advanced.png
+  :scale: 75%
+
 
 This tab allows the user to write python code that is executed before the workflow runs. This is a good opportunity for advanced users to re-wire the preprocessing workflow. 
 
